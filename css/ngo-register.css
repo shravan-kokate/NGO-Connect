@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Registration Container */
+.registration-container {
+  background-color: #e9ecef;
+  padding: 2rem;
+  min-height: 100vh; /* Ensures it fits the full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 700px; /* Limit card width */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
+  overflow: hidden;
+}
+
+/* Form Styles */
+form .form-label {
+  font-weight: bold;
+  color: #495057;
+}
+
+form .form-control, form .form-select {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  margin-bottom: 1rem; /* Add spacing between fields */
+}
+
+form .form-control:focus, form .form-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+button {
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+#verifyBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+#verifyBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Ensure Visibility for all Fields */
+.card-body {
+  padding: 2rem; /* Add consistent spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .registration-container {
+    padding: 1rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+}
+
+/* Registration Page Background */
+.registration-container {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url('../images/ngo/images.jpeg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}

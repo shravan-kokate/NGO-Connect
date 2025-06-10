@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGO Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/ngo-dashboard.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="dashboard-container d-flex">
+      <!-- Sidebar -->
+      <nav class="sidebar bg-dark text-white">
+        <h3 class="text-center py-3">NGO Dashboard</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#"
+              onclick="loadSection('profile')"
+            >
+              <i class="fas fa-user-circle"></i> Profile Overview
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#"
+              onclick="loadSection('events')"
+            >
+              <i class="fas fa-calendar-alt"></i> Upcoming Events
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#"
+              onclick="loadSection('donations')"
+            >
+              <i class="fas fa-hand-holding-heart"></i> Donation Management
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#"
+              onclick="loadSection('volunteers')"
+            >
+              <i class="fas fa-users"></i> Volunteer Management
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#"
+              onclick="loadSection('addevent')"
+            >
+              <i class="fas fa-chart-line"></i> Add Event
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#"
+              onclick="loadSection('collaborate')"
+            >
+              <i class="fas fa-handshake"></i> Collaborate With NGO
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#"
+              onclick="loadSection('report')"
+            >
+            <i class="fas fa-file-alt"></i> Reports & Analytics
+            </a>
+          </li>
+          <li class="nav-item mt-auto">
+            <a class="nav-link text-danger" href="index.html">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="main-content flex-grow-1 p-4">
+        <div id="dashboardContent">
+          <h2>Welcome to Your Dashboard!</h2>
+          <p>Select an option from the sidebar to explore various sections.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/ngo-dashboard.js"></script>
+  </body>
+</html>
