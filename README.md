@@ -2,6 +2,9 @@
 
 NGO Connect is a web platform designed to connect NGOs, volunteers, and donors to create meaningful social change. The platform allows users to register as volunteers, NGOs to manage events and volunteers, and donors to contribute to various causes.
 
+![image](https://github.com/user-attachments/assets/a5e1cafd-e0fa-4496-a680-f2bab230635e)
+
+
 ## Features
 
 - **Home Page:** Overview of the platform, featured causes, and impact statistics.
